@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <!-- Awal Proses Debug -->
+        <button onclick="changeButton(this)">Klik disini!</button>
+
+        <script>
+       function changeButton(obj) {
+         console.log(obj)
+       }
+     </script>
+        <!-- Akhir Proses Debug -->
+
+        <!-- Awal Contoh Proses Debugging -->
+        <p id="greeting">Hello world</p>
+        <button onclick="changeColor()">Klik disini!</button>
+
+        <script>
+    //   const text = document.getElementById('greting');
+      console.log(text); //Menambahkan Console log
+      function changeColor() {
+	 text.color = "red";
+      }
+    </script>
+        <!-- Akhir Contoh Proses Debugging -->
+        <!-- ubah kode agar berfungsi dengan baik -->
+        <p id="greeting">Hello world</p>
+        <button onclick="changeColor()">Klik disini!</button>
+
+        <script>
+        //   const text = document.getElementById('greeting');
+          function changeColor() {
+         text.color = "red";
+          }
+        </script>
+        <!-- akhir ubah kode -->
+        <!-- Function Called -->
+        <script>
+            const text = document.getElementById('greeting');
+            function changeColor() {
+              console.log('function called');
+              text.style.color = "red";
+            }
+          </script>
+        <!-- akhir function -->
+    </body>
+</html>
